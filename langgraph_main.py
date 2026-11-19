@@ -142,4 +142,4 @@ def build_crag_graph(bm25_index, texts, metadatas, ids, collection, embedding_mo
     )
     memory=MemorySaver()
 
-    return workflow.compile(checkpointer=memory,interrupt_before=["generator_node"] if enable_hitl else [])
+    return workflow.compile(checkpointer=memory,interrupt_before=["generator_node"] if enable_hitl else None)
