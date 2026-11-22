@@ -1,3 +1,8 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+torchvision
+safetensors
+
 # Core Orchestration, LLM & Observability
 langgraph
 langchain-core>=1.0.0
@@ -6,13 +11,15 @@ langfuse>=5.0.0
 python-dotenv
 
 # Document Parsing, Hybrid Retrieval & Reranking
+docling
+docling-parse
 langchain-docling
 chromadb
 rank-bm25
 sentence-transformers
 transformers>=4.48.0
 
-# Serving & Interfaces (Streamlit, FastAPI, MCP)
+# Serving & Interfaces
 streamlit
 fastapi
 uvicorn[standard]
