@@ -1,0 +1,26 @@
+# Core Orchestration, LLM & Observability
+langgraph
+langchain-core>=1.0.0
+groq
+langfuse>=5.0.0
+python-dotenv
+
+# Document Parsing, Hybrid Retrieval & Reranking
+docling
+langchain-docling
+chromadb
+rank-bm25
+sentence-transformers
+transformers>=4.48.0
+torch
+
+# Serving & Interfaces (Streamlit, FastAPI, MCP)
+streamlit
+fastapi
+uvicorn[standard]
+python-multipart
+pydantic
+mcp
+
+# Evaluation & Benchmarking
+pandas
