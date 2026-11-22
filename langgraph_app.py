@@ -3,10 +3,6 @@ import tempfile
 import os
 import uuid
 
-# --- INJECT OFFLINE FLAGS BEFORE ANY OTHER IMPORTS ---
-os.environ["HF_HUB_OFFLINE"] = "1"
-os.environ["TRANSFORMERS_OFFLINE"] = "1"
-
 from loaders import load_pdf
 from embeddings import hybrid_search
 from langgraph_main import build_crag_graph 
