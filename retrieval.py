@@ -1,7 +1,7 @@
 from sentence_transformers import CrossEncoder
 from collections import defaultdict
 
-reranker = CrossEncoder("Alibaba-NLP/gte-reranker-modernbert-base",local_files_only=True)
+reranker = CrossEncoder("Alibaba-NLP/gte-reranker-modernbert-base")
 def get_top_chunks(query: str, bm25_index,bm25_texts,bm25_metadatas,bm25_ids,collection,embedding_model,top_k: int = 3):
     ques_embedding = embedding_model.encode(query).tolist()
     que_result = collection.query(
