@@ -1,6 +1,6 @@
 # Corrective RAG (CRAG) v2 — Legal Research Agent
-* **Deployed App:** [Try CRAG v2 on Streamlit Cloud](https://cragv2-fkrohmctyh2dajkhuupsen.streamlit.app/)
-* **Video Walkthrough (2:40):** [Watch on YouTube](https://youtu.be/3CTfb9hW23o) — End-to-end demonstration of PDF ingestion, hybrid retrieval, Human-in-the-Loop (HITL) approval/cancellation, and LangGraph Time Travel state editing.
+**Deployed App:** [Try CRAG v2 on Streamlit Cloud](https://cragv2-fkrohmctyh2dajkhuupsen.streamlit.app/)
+**Video Walkthrough (2:40):** [Watch on YouTube](https://youtu.be/3CTfb9hW23o) — End-to-end demonstration of PDF ingestion, hybrid retrieval, Human-in-the-Loop (HITL) approval/cancellation, and LangGraph Time Travel state editing.
 
 A deterministic, self-correcting Retrieval-Augmented Generation (CRAG) agent engineered for high-precision querying over complex statutory documents, evaluated on **India's Digital Personal Data Protection (DPDP) Rules, 2025**.
 
