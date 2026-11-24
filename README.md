@@ -1,5 +1,6 @@
 # Corrective RAG (CRAG) v2 — Legal Research Agent
 (streamlit url: https://cragv2-fkrohmctyh2dajkhuupsen.streamlit.app/)
+[Video Walkthrough: https://youtu.be/3CTfb9hW23o]
 
 A deterministic, self-correcting Retrieval-Augmented Generation (CRAG) agent engineered for high-precision querying over complex statutory documents, evaluated on **India's Digital Personal Data Protection (DPDP) Rules, 2025**.
 
