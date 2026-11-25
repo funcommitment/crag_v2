@@ -108,10 +108,10 @@ The graph is instrumented inside `langgraph_main.py` using Langfuse's `CallbackH
 
 | Component | Observed p50 Latency | Key Engineering Finding |
 |---|---|---|
-| **`retrieval_node`** | **8.65s**[cite: 2] | Accounts for ~85% of total runtime (`9.52s` p50) due to running FP32 `gte-reranker-modernbert-base` (149M params) across 10 legal chunks on CPU[cite: 2]. |
-| **`grader_node`** | **1.33s**[cite: 2] | Emitting a 5-token JSON verdict (`{"relevant": true}`) consumed ~149 output tokens due to `openai/gpt-oss-120b`'s internal reasoning tokens[cite: 1, 2]. |
-| **`generator_node`** | **1.19s**[cite: 2] | Fast inference on Groq (`groq_llm_call` p50: `1.22s`)[cite: 2]. Input token volume (~850 tokens/call) is driven primarily by passing the top-3 retrieved chunks to both grader and generator[cite: 1]. |
-| **`route_after_grade`** | **0.00s**[cite: 2] | Pure Python conditional routing[cite: 2]. |
+| **`retrieval_node`** | **8.65s** | Accounts for ~85% of total runtime (`9.52s` p50) due to running FP32 `gte-reranker-modernbert-base` (149M params) across 10 legal chunks on CPU. |
+| **`grader_node`** | **1.33s** | Emitting a 5-token JSON verdict (`{"relevant": true}`) consumed ~149 output tokens due to `openai/gpt-oss-120b`'s internal reasoning tokens. |
+| **`generator_node`** | **1.19s** | Fast inference on Groq (`groq_llm_call` p50: `1.22s`). Input token volume (~850 tokens/call) is driven primarily by passing the top-3 retrieved chunks to both grader and generator. |
+| **`route_after_grade`** | **0.00s** | Pure Python conditional routing. |
 
 ### Documented Accuracy-vs-Latency Trade-off & Next Optimizations
 
